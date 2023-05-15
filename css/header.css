@@ -18,6 +18,87 @@
   height: 48px;
 }
 
+.header__hamburger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  transform: translateX(100%);
+  transition: transform 0.6s ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: #1f1945;
+  list-style: none;
+}
+
+.header__hamburger-icon {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 8px;
+  border: none;
+  background: none;
+}
+
+.header__menu {
+  display: none;
+}
+.header__menu-item {
+  display: block;
+  padding: 10px;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #bfb9f3;
+  font-size: var(--medium-font);
+}
+
+.header__item-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__close-icon {
+  display: none;
+}
+
+.showMenu {
+  transform: translateX(0);
+}
+
+.header__hr {
+  width: 80%;
+  border: 1px solid rgb(200, 195, 245, 0.03);
+}
+
+.header__btn {
+  background-color: var(--purple-tertiary-secondary);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: var(--white-color);
+  font-size: var(--medium-font);
+  width: 208px;
+  height: 42px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.header__btn-img {
+  margin-left: 8px;
+}
+
+.header__selected-link {
+  color: var(--white-color);
+}
+
 @media screen and (min-width: 768px) {
   .header {
     padding: 20px;
@@ -25,6 +106,10 @@
   .header__logo-img {
     width: 160px;
     height: 58px;
+  }
+
+  .header__menu-icon {
+    width: 42px;
   }
 }
 
@@ -41,5 +126,46 @@
   .header__logo-img {
     width: 160px;
     height: 58px;
+  }
+
+  .header__menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header__hamburger {
+    display: none;
+  }
+
+  .header__hamburger-icon {
+    display: none;
+  }
+
+  .header__item-container {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+
+  .header__menu-item {
+    color: #222228;
+    margin-right: 4px;
+    padding: 0 20px;
+    font-size: var(--normal-font);
+    font-weight: 500;
+  }
+
+  .header__selected-link {
+    color: var(--purple-secondary-color);
+  }
+
+  .header__btn {
+    width: 158px;
+    margin: 0 0 0 30px;
+    font-weight: 600;
+  }
+  .header__menu-item:hover {
+    color: #bfb9f3;
+    transition: 0.6s;
   }
 }

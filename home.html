@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=`, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/header.css" />
     <title>Home</title>
@@ -19,8 +20,51 @@
               <img class="header__logo-img" src="images/logo.png" alt="logo" />
             </a>
           </div>
+          <div class="header__menu-container">
+            <!--Menu-->
+            <ul class="header__menu">
+              <div class="header__item-container">
+                <li>
+                  <a class="header__menu-item header__selected-link" href="#">Home</a>
+                </li>
+                <li><a class="header__menu-item" href="#">About Us</a></li>
+                <li><a class="header__menu-item" href="#">Services</a></li>
+                <li><a class="header__menu-item" href="#">FAQ</a></li>
+                <li><a class="header__menu-item" href="#">Contact Us</a></li>
+                <a href="#" class="header__btn" target="_blank">
+                  Buy now
+                  <img class="header__btn-img" src="images/right-arrow-10.png" alt="right-arrow" />
+                </a>
+              </div>
+            </ul>
+            <!--Hamburger menu-->
+            <ul class="header__hamburger">
+              <a href="#" class="header__btn" target="_blank">
+                Buy now
+                <img class="header__btn-img" src="images/right-arrow-10.png" alt="right-arrow"/>
+              </a>
+              <div class="header__item-container">
+                <hr class="header__hr" />
+                <li><a class="header__menu-item header__selected-link" href="#">Home</a></li>
+                <hr class="header__hr" />
+                <li><a class="header__menu-item" href="#">About Us</a></li>
+                <hr class="header__hr" />
+                <li><a class="header__menu-item" href="#">Services</a></li>
+                <hr class="header__hr" />
+                <li><a class="header__menu-item" href="#">FAQ</a></li>
+                <hr class="header__hr" />
+                <li><a class="header__menu-item" href="#">Contact Us</a></li>
+                <hr class="header__hr" />
+              </div>
+            </ul>
+            <button class="header__hamburger-icon">
+              <img class="header__menu-icon" src="images/menu-icon-30.png" alt="menu" />
+              <img class="header__close-icon" src="images/close-icon-30.png" alt="close" />
+            </button>
+          </div>
         </div>
       </div>
     </div>
+    <script src="JS/header.js"></script>
   </body>
 </html>
