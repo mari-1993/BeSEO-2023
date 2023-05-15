@@ -1,0 +1,33 @@
+* , ::after, ::before{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size:10px;
+    font-family: "Archivo", Helvetica, Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Archivo";
+    src: url("../font/Archivo-VariableFont.ttf") format("trueType");
+}
+
+
+:root {
+    --purple-primary-color: #473288;
+    --purple-secondary-color: #7B66EF;
+    --purple-tertiary-secondary: #C7C6FC;
+    --white-color: #ffffff;
+    --yellow-primary-color: #FCA80F;
+    --yellow-secondary-color:#fca80f21;
+    --very-large-font: 5.2rem;
+    --large-font: 3rem;
+    --normal-font:1.8rem;
+    --medium-font: 1.6rem;
+    --small-font: 1.2rem;
+}
+
+
